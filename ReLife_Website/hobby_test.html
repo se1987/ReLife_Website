@@ -1,0 +1,207 @@
+<!-- DOCTYPE宣言と呼ばれるもので、HTMLのバージョンを宣言するためのもの-->
+<!DOCTYPE html>
+<!-- 日本語を使うということ -->
+<html lang="ja">
+<head>
+    <!-- 文字コードの設定 -->
+    <meta charset="UTF-8">
+    <!-- サイトタイトルの設定 -->
+    <title>ReLife〜50代以上の女性のためのサイト〜</title>
+    <!-- サイトディスクリプションの設定 -->
+    <meta name="description" content="50代以上の女性を対象に、趣味さがし・お金、健康などの老後の悩みを解消するためのコラムや気の合う仲間を見つけるための交流の場を提供するサイトです。">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSSの読み込み -->
+    <link rel="stylesheet" type="text/css" href="reset.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- jQueryの読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- icon JavaScriptを読み込む -->
+    <script src="https://kit.fontawesome.com/0cf2aed769.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header>
+		<div class="header-wrapper">
+			<div class="header-logo">
+				<img src="images/logo.png" alt="ReLife-logo">
+			</div>
+			<div class="menu">
+				<a href="hobby_popular_all.html">🔙　趣味一覧へ</a>
+			
+				<div class="searchForm-area">
+					<form class="searchForm">
+						<input type="search" class="text" placeholder="キーワードで探す">
+						<button type="submit" class="searchForm-button" value="検索"><img src="https://drive.google.com/uc?export=view&id=14qL6YD2g-JNNp6ClYdNpiVjZDAGp3eaL" alt=""></button>
+					</form>
+				</div>
+			</div>
+			<div class="menu-sp">
+				<a href="index.html">🔙</a>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<!-- 趣味さがし -->
+		<div class="container">
+			<h2 class="title"><a id="hobby">- 趣味さがし -</a></h2>
+			<div class="inner">
+				<div class="choose_box">
+   
+					<div id="q_01" class="fit">
+					 	<p>質問1<br>
+							休日は、どんな風に過ごすことが多いですか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#q_02">近場へ出かける</a></li>
+							<li class="odd"><a class="btn" href="#q_03">アウトドア・旅行</a></li>
+							<li class="odd"><a class="btn" href="#q_04">家でのんびり過ごす</a></li>
+							<li class="odd"><a class="btn" href="#q_05">学びに時間を費やす</a></li>
+						</ul>
+					</div>
+					 <!-- 最初の選択肢 -->
+					   
+					<div id="q_02" style="display: none;" class="fit">
+						<p>質問2<br>
+							あなたの社交スタイルは？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#q_06">一人で過ごすことが好き</a></li>
+							<li class="odd"><a class="btn" href="#q_07">少人数グループを好む</a></li>
+							<li class="odd"><a class="btn" href="#q_08">たくさんの人と一緒にいることが好き</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					  
+					<div id="q_03" style="display: none;" class="fit">
+						<p>質問2<br>
+							あなたのトラブル対処法は？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#q_06">問題が起きないよう用意周到に準備する</a></li>
+							<li class="even"><a class="btn" href="#q_07">どちらとも言えない</a></li>
+							<li class="odd"><a class="btn" href="#q_08">問題が起きた時に柔軟に対処する</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					   
+					<div id="q_04" style="display: none;" class="fit">
+						<p>質問2<br>
+							集中力が長続きする方ですか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#q_06">集中力がある方だ</a></li>
+							<li class="even"><a class="btn" href="#q_07">どちらとも言えない</a></li>
+							<li class="odd"><a class="btn" href="#q_08">すぐに飽きてしまう方だ</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					   
+					<div id="q_05" style="display: none;" class="fit">
+						<p>質問2<br>
+							お金や時間を気にせず、好きな所へ旅行に行けるとしたら、どれを選びますか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#q_06">ゆったり温泉旅行</a></li>
+							<li class="odd"><a class="btn" href="#q_07">マチュピチュ世界遺産めぐり</a></li>
+							<li class="odd"><a class="btn" href="#q_08">贅沢ラスベガスの旅</a></li>
+						</ul>
+					</div>
+
+					<div id="q_06" style="display: none;" class="fit">
+						<p>質問3<br>
+							子どもの頃に得意または好きだった科目はどれですか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#a_04">国語・算数・理科・社会</a></li>
+							<li class="odd"><a class="btn" href="#a_02">図工</a></li>
+							<li class="odd"><a class="btn" href="#a_06">音楽</a></li>
+							<li class="odd"><a class="btn" href="#a_07">体育</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					  
+					<div id="q_07" style="display: none;" class="fit">
+						<p>質問3<br>
+							チームプレーと個人プレーなら、どちらが実力を発揮できそうですか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#a_05">チームプレー</a></li>
+							<li class="odd"><a class="btn" href="#a_04">個人プレー</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					   
+					<div id="q_08" style="display: none;" class="fit">
+						<p>質問3<br>
+							自分の想いを主張することに抵抗はありますか？
+						</p>
+						<ul class="flexbox fw">
+							<li class="even"><a class="btn" href="#a_01">ある（遠慮がちである）</a></li>
+							<li class="odd"><a class="btn" href="#a_08">あまりない</a></li>
+						</ul>
+					</div>
+					<!-- 次の選択肢 -->
+					   
+					<!-- 選択肢の答え -->					   
+					<div id="a_01" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『ヨガ』です！！</h5>
+						<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+					  
+					<div id="a_02" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『ドローン』です！！</h5>
+						<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+
+					<div id="a_03" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『乗馬』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+
+					<div id="a_04" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『釣り』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+
+					<div id="a_05" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『カラオケ』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+
+					<div id="a_06" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『楽器』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+
+					<div id="a_07" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『アーチェリー』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+					
+					<div id="a_08" style="display: none;" class="fit">
+						<p>あなたにおすすめなのは…</p>
+						<h5>『ダンス』です！！</h5>
+					 	<span><a class="btn" href="#q_01">もどる</a></span>
+					</div>
+					<!-- 選択肢の答え② -->
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="copyright">
+			<small>Copyright 2023 ReLife inc.</small>
+		</div>
+	</footer>	
+</body>
+<script src="js/hobby_test.js"></script>
+</html>

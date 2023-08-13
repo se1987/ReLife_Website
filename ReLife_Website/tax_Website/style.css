@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* 全体のスタイル */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #333;
+    font-size: 32px;
+  }
+  
+  /* ナビゲーション */
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* セクション */
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+  }
+  
+  section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    color: #555;
+  }
+  
+  /* フォーム */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* フッター */
+  footer {
+    background-color: #333;
+    color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
